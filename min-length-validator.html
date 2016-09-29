@@ -1,0 +1,31 @@
+<!doctype html>
+<link rel="import" href="../iron-validator-behavior/iron-validator-behavior.html">
+
+<!--
+Validates that the value has a certain minimal length
+-->
+<script>
+
+(function() {
+
+	Polymer({
+		is: 'min-length-validator',
+		properties: {
+			/**
+			 * Minimal length
+			 */
+			minLength: Number
+		},
+		behaviors: [
+			Polymer.IronValidatorBehavior
+		],
+
+		validate: function(value) {
+			// Ignore if no confirm password was entered
+			return !value || value.length >= this.minLength;
+		}
+	});
+
+})();
+
+</script>

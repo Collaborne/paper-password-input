@@ -1,16 +1,44 @@
 <html>
 	<head>
 		<script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+		<link rel="import" href="../../paper-styles/demo-pages.html">
 		<link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
 		<link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
 		<link rel="import" href="../paper-password-input.html">
+		<link rel="import" href="../min-length-validator.html">
+		<link rel="import" href="../match-passwords-validator.html">
 	</head>
 
 	<body>
+		<h2>Simple password</h2>
 		<demo-snippet>
 			<template is="dom-bind">
-				<paper-password-input>
-					Lots of very interesting content.
+				<paper-password-input></paper-password-input>
+			</template>
+		</demo-snippet>
+
+		<h2>Password entry with min-length validation</h2>
+		<demo-snippet>
+			<template is="dom-bind">
+				<min-length-validator id="min-length-validator" min-length="6"></min-length-validator>
+				<paper-password-input
+					auto-validate
+					validator="min-length-validator"
+					error-message="Enter at least 6 characters">
+				</paper-password-input>
+			</template>
+		</demo-snippet>
+
+		<h2>Password/confirm entry with match validation</h2>
+		<demo-snippet>
+			<template is="dom-bind">
+				<match-passwords-validator id="match-passwords-validator" password="[[password]]"></match-passwords-validator>
+				<paper-password-input label="Password" value="{{password}}"></paper-password-input>
+				<paper-password-input
+					label="Confirm"
+					auto-validate
+					validator="match-passwords-validator"
+					error-message="Passwords need to match">
 				</paper-password-input>
 			</template>
 		</demo-snippet>
