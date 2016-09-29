@@ -14,6 +14,8 @@ before_script:
 - export PATH=$PWD/node_modules/.bin:$PATH
 script:
 - xvfb-run wct
-after_success: '[ ${TRAVIS_PULL_REQUEST} = "false" ] && [ ${TRAVIS_BRANCH} = "master" ] && bower install -s https://${GH_TOKEN}@github.com/Collaborne/collaborne-build-tools.git && bower_components/collaborne-build-tools/gpages_build.sh Collaborne info@collaborne.com'
+after_success: '[ ${TRAVIS_PULL_REQUEST} = "false" ] && [ ${TRAVIS_BRANCH} = "master"
+  ] && bower install -s https://${GH_TOKEN}@github.com/Collaborne/collaborne-build-tools.git
+  && bower_components/collaborne-build-tools/gpages_build.sh Collaborne info@collaborne.com'
 env:
-  secure: l7/neeNOLXly9fDE7Zoxnc8Nr5aGB9r56RrXQ604aJ7dYIgKE9hg7aKOYBpbe47Qm7GJqJtC27qB4oPaO2DxMg5YSnFIM0NQ0h0MpvEi7nvRC/55ZkhVhWi9DNjccghJzs/WP5IqlFLzBUui6pAMKyG6NqCUc/iijap7UZfGxInNjeJD0ZL8/Qjs5f73jCmsF5iPHhT3d6NimjnxFQi9/cqd/FrHPFOOQ0yTOv5tUFbYu4Hhsc5slI7UckH9x6N8jo7BBuJpl2zKien8rLUF0oQE37h0eNgA7oPaTZOWK6ysaY+MCUSMzzA0Sxf7V6N40CStT+whJ/DYVNHMNUMWf7RmaUpYV+3wKS2ERgtMXP3th3C4Nsok0OYBxpJJB2GHvow0QEnngXUVvx4cQlvClDBzDo6Kx6sABM4RNp4WqOVUF7gmLXK7wnlZBQft/Rnd0CC7IAZTdYVvd+IjR/oIsZDilxEIHG18f1EzLN1m+9NHvgRW8F2xuetOQM6tRfZF2q3MTia0ZWHwcbkoIXr7xNWxYQaf5ZXnpnIXgdf72uOcZOUBM4T4xpOSooSdrLv0iGF20CqnoWLwEe2+HU6YScm6WW3K+8va/O8hC7pzj7ZvUGQEwd4Br6IRlvBelVqhNnoPuNsy+k2itSGJxXtVCnINX38b09W+iOUG0ixdvHM=
+  secure: PmDuntdWEK6dnl6LxT5FGc2X7VT2Yay1tVZlEVCCDIEs+JHsxK+39ELqEaElxcke+SvSYHUm26UfUV48dXn8xncwvfwMApM6LRZ0D95fe61FVtQsGDHWCwoWVFSqXlKAMKxXggmuICsMqGbmEOom096W+HPXtzudo913Yg4CPzXTakXpTyam9CjK3JZP2CCHQbkFlAGpDVTBqcNUAkmL0Cl1pA5W7SWFn+0ZDKQjagypzMEsNGCopTPXSZ0xXtFuZL0VrXtzXcGerevoGHQ+GzcKSke/nh0+j8OHnhH4k+EVcH5OllxySubDlY6FmKs6Mgtq2JAzVkE7VRnOb7H9gEMe6lyUYRRpmO8xPO/E40RvHpY021SSRHRSJ7m68olmrVPAKNtx5Bs98ivGRIKX71l4I6fgJ+EdRI+Am8KrprvSGP1nJ9RjyCkNVExdYwTJBxGgDK8E8mY94bne6hOURiMnZ+YlDPrlkozTHbYl7bLjOOTR9DUVGmf7JaK0X1oa04AKBiKT6684cAE9m3vYbZUwwe2RRSLKnKex3NVd0rZ7ZFuu8uPQT7VNEMx2NomEa7elhXM2OqO6ApSXLmD76DLwOie1RQ5vTfbb26tz0/zB32u2NfV8Pwi5CCqJjFIE58EUYNxyOdC1qeMRJ7eg4LkNfKndJ3K43FHwIfl3SUU=
