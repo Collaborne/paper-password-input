@@ -1,5 +1,7 @@
 _[Demo and API Docs](http://collaborne.github.io/paper-password-input)_
 
+*[Blog post about the element](https://medium.com/collaborne-engineering/returning-promises-from-redux-action-creators-3035f34fa74b#.4pfqs1e1y)*
+
 
 paper-password-input [![Bower version](https://badge.fury.io/bo/paper-password-input.svg)](http://badge.fury.io/bo/paper-password-input)
 =========
