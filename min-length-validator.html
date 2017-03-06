@@ -3,6 +3,10 @@
 
 <!--
 Validates that the value has a certain minimal length
+
+The validator ignores if the value is empty. This prevents
+showing a warning message before the user started to enter
+any content.
 -->
 <script>
 
@@ -21,7 +25,7 @@ Validates that the value has a certain minimal length
 		],
 
 		validate: function(value) {
-			// Ignore if no confirm password was entered
+			// Don't trigger warning if no value was entered
 			return !value || value.length >= this.minLength;
 		}
 	});
