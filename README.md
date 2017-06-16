@@ -1,16 +1,34 @@
-_[Demo and API Docs](http://collaborne.github.io/paper-password-input)_
-
 **[Blog post about the element](https://medium.com/collaborne-engineering/password-input-for-polymer-92f1b98f2ca9#.inaeg82yb)**
 
 
-paper-password-input [![Bower version](https://badge.fury.io/bo/paper-password-input.svg)](http://badge.fury.io/bo/paper-password-input)
+paper-password-input [![Bower version](https://badge.fury.io/bo/paper-password-input.svg)](http://badge.fury.io/bo/paper-password-input) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/paper-password-input)
 =========
 
-`paper-password-input` provides a Material Design input field to enter passwords. The web component is built with [Polymer 1.x](https://www.polymer-project.org).
+`paper-password-input` provides a Material Design input field to enter passwords. The web component is built with [Polymer](https://www.polymer-project.org).
 
 To use this element:
 
 `bower install paper-password-input`
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="paper-password-input.html">
+    <link rel="import" href="min-length-validator.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<min-length-validator id="min-length-validator" min-length="6"></min-length-validator>
+<paper-password-input
+    auto-validate
+    validator="min-length-validator"
+    error-message="Enter at least 6 characters">
+</paper-password-input>
+```
 
 
 ## License
