@@ -6,7 +6,8 @@ language: node_js
 node_js:
 - node
 addons:
-  firefox: '49.0.2'
+  chrome: stable
+  firefox: 'latest-esr'
 cache:
   directories:
   - node_modules
