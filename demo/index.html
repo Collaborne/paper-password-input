@@ -12,14 +12,14 @@
 	<body>
 		<h2>Simple password</h2>
 		<demo-snippet>
-			<template is="dom-bind">
+			<template>
 				<paper-password-input></paper-password-input>
 			</template>
 		</demo-snippet>
 
 		<h2>Password entry with min-length validation</h2>
 		<demo-snippet>
-			<template is="dom-bind">
+			<template>
 				<min-length-validator id="min-length-validator" min-length="6"></min-length-validator>
 				<paper-password-input
 					auto-validate
@@ -33,15 +33,19 @@
 
 		<h2>Password/confirm entry with match validation</h2>
 		<demo-snippet>
-			<template is="dom-bind">
-				<match-passwords-validator id="match-passwords-validator" password="[[password]]"></match-passwords-validator>
-				<paper-password-input label="Password" value="{{password}}"></paper-password-input>
-				<paper-password-input
-					label="Confirm"
-					auto-validate
-					validator="match-passwords-validator"
-					error-message="Passwords need to match">
-				</paper-password-input>
+			<template>
+				<dom-bind>
+					<template>
+						<match-passwords-validator id="match-passwords-validator" password="[[password]]"></match-passwords-validator>
+						<paper-password-input label="Password" value="{{password}}"></paper-password-input>
+						<paper-password-input
+							label="Confirm"
+							auto-validate
+							validator="match-passwords-validator"
+							error-message="Passwords need to match">
+						</paper-password-input>
+					</template>
+				</dom-bind>
 			</template>
 		</demo-snippet>
 	</body>
