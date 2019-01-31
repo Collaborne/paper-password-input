@@ -2,16 +2,16 @@
 import { Polymer, html } from '@polymer/polymer/polymer-legacy.js';
 
 import "../iron-validator-behavior/iron-validator-behavior.html"
-<!--
-Validates that the value has a certain minimal length
+
+/* Validates that the value has a certain minimal length
 
 The validator ignores if the value is empty. This prevents
 showing a warning message before the user started to enter
 any content.
 See Material Design specification:
 "Show error text only after user interaction with a field. If the user inputs incorrect data, helper text may transform into error text."
-@see https://material.io/guidelines/patterns/errors.html#errors-user-input-errors
--->
+@see https://material.io/guidelines/patterns/errors.html#errors-user-input-errors */
+
 const template= html`
 `;
 

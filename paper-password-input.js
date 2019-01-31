@@ -8,11 +8,11 @@ import "../paper-icon-button/paper-icon-button.html";
 import "../paper-styles/default-theme.html"
 
 
-<!--
-A Material Design input field to enter passwords
 
-@demo demo/index.html
--->
+/* A Material Design input field to enter passwords
+
+@demo demo/index.html */
+
 const template= html`
 		<style>
 			.visibility-icon {
@@ -55,7 +55,8 @@ const template= html`
 		`;
 
 	Polymer({
-		is: 'paper-password-input',
+        is: 'paper-password-input',
+        _template:template,
 		properties: {
 			/**
 			 * True if the content of the password field is visible
