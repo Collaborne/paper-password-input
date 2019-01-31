@@ -4,7 +4,7 @@
     "collaborne"
   ],
   "description": "A Material Design input field to enter passwords (Polymer)",
-  "main": "paper-password-input.html",
+  "main": "paper-password-input.js",
   "keywords": [
     "web-components",
     "polymer",
