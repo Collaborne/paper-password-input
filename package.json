@@ -19,15 +19,15 @@
     "**/.*"
   ],
   "dependencies": {
-    "@polymer/polymer": "^3.0.0",
+    "@polymer/polymer": "3.1.0",
     "@polymer/iron-icons": "^3.0.1",
     "@polymer/iron-validator-behavior":"^3.0.0-pre.26",
-    "@polymer/iron-input": "^3.0.0-pre.26",
+    "@polymer/iron-input": "3.0.1",
     "@polymer/paper-icon-button": "^3.0.0-pre.18",
     "@polymer/paper-styles": "^3.0.0-pre.26",
   },
   "devDependencies": {
-    "@polymer/iron-component-page": "4.0.1",
+    "@polymer/iron-component-page": "^3.0.0-pre.12",
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
     "web-component-tester": "*"
   }
