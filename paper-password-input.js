@@ -1,13 +1,10 @@
 import { Polymer, html } from '@polymer/polymer/polymer-legacy.js';
 
 
-import "../polymer/polymer.html";
-import "../iron-icons/iron-icons.html";
-import "../paper-input/paper-input.html";
-import "../paper-icon-button/paper-icon-button.html";
-import "../paper-styles/default-theme.html"
-
-
+import '../@polymer/iron-icons/iron-icons.js'
+import '../@polymer/paper-input/paper-input.js'
+import '../@polymer/paper-icon-button/paper-icon-button.js'
+import '../@polymer/paper-styles/default-theme.js'
 
 /* A Material Design input field to enter passwords
 

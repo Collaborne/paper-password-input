@@ -1,7 +1,7 @@
 
 import { Polymer, html } from '@polymer/polymer/polymer-legacy.js';
 
-import "../iron-validator-behavior/iron-validator-behavior.html"
+import '../@polymer/iron-validator-behavior/iron-validator-behavior.js'
 
 /* Validates that the value has a certain minimal length
 
