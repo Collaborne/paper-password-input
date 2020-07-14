@@ -6,7 +6,7 @@
 
 import { Polymer, html } from '@polymer/polymer/polymer-legacy.js';
 
-import '../@polymer/iron-validator-behavior/iron-validator-behavior.js'
+import '../@polymer/iron-validator-behavior/iron-validator-behavior.js';
 
 const template = html`
 `;
