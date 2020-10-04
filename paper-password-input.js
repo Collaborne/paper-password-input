@@ -1,18 +1,16 @@
-<link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../iron-icons/iron-icons.html">
-<link rel="import" href="../paper-input/paper-input.html">
-<link rel="import" href="../paper-icon-button/paper-icon-button.html">
-<link rel="import" href="../paper-styles/default-theme.html">
+import { Polymer, html } from '@polymer/polymer/polymer-legacy.js';
 
-<!--
-A Material Design input field to enter passwords
 
-@demo demo/index.html
--->
-<dom-module id="paper-password-input">
+import '../@polymer/iron-icons/iron-icons.js'
+import '../@polymer/paper-input/paper-input.js'
+import '../@polymer/paper-icon-button/paper-icon-button.js'
+import '../@polymer/paper-styles/default-theme.js'
 
-	<template>
+/* A Material Design input field to enter passwords
 
+@demo demo/index.html */
+
+const template= html`
 		<style>
 			.visibility-icon {
 				color: var(--disabled-text-color);
@@ -51,15 +49,11 @@ A Material Design input field to enter passwords
 			></paper-icon-button>
 		</paper-input>
 
-	</template>
-</dom-module>
-
-<script>
-
-(function() {
+		`;
 
 	Polymer({
-		is: 'paper-password-input',
+        is: 'paper-password-input',
+        _template:template,
 		properties: {
 			/**
 			 * True if the content of the password field is visible
@@ -107,6 +101,3 @@ A Material Design input field to enter passwords
 		},
 	});
 
-})();
-
-</script>

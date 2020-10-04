@@ -1,0 +1,49 @@
+{
+  "name": "paper-password-input",
+  "authors": [
+    "collaborne"
+  ],
+  
+  "description": "A Material Design input field to enter passwords (Polymer)",
+  "main": "paper-password-input.html",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "paper",
+    "material design",
+    "input",
+    "password"
+  ],
+  "_requested": {
+    "type": "git",
+    "raw": "paper-password-input@git+https://github.com/anoopsharma010395/paper-password-input.git",
+    "name": "paper-password-input",
+    "rawSpec": "git+https://github.com/anoopsharma010395/paper-password-input.git",
+    "saveSpec": "git+https://github.com/anoopsharma010395/paper-password-input.git",
+    "fetchSpec": "https://github.com/anoopsharma010395/paper-password-input.git",
+    "gitCommittish": "master"
+  },
+  "license": "Apache 2",
+  "homepage": "https://github.com/collaborne/paper-password-input",
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "@polymer/polymer": "3.1.0",
+    "@polymer/iron-icons": "^3.0.1",
+    "@polymer/iron-validator-behavior":"^3.0.0-pre.26",
+    "@polymer/iron-input": "3.0.1",
+    "@polymer/paper-icon-button": "^3.0.0-pre.18",
+    "@polymer/paper-styles": "^3.0.0-pre.26"
+  },
+  "devDependencies": {
+    "@polymer/iron-component-page": "^3.0.0-pre.12",
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "web-component-tester": "*"
+  },
+  "version": "3.0.1",
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Collaborne/paper-password-input.git"
+  }
+}
