@@ -1,5 +1,6 @@
 **[Blog post about the element](https://medium.com/collaborne-engineering/password-input-for-polymer-92f1b98f2ca9#.inaeg82yb)**
 
+**This repo is archived as we stopped maintaining it. Please fork the repo if you wish to continue the development elsewhere.**
 
 paper-password-input [![Build Status](https://travis-ci.org/Collaborne/paper-password-input.svg?branch=master)](https://travis-ci.org/Collaborne/paper-password-input) [![Bower version](https://badge.fury.io/bo/paper-password-input.svg)](http://badge.fury.io/bo/paper-password-input) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/Collaborne/paper-password-input) [![Published on Vaadin  Directory](https://img.shields.io/badge/Vaadin%20Directory-published-00b4f0.svg)](https://vaadin.com/directory/component/Collabornepaper-password-input) [![Stars on vaadin.com/directory](https://img.shields.io/vaadin-directory/star/Collabornepaper-password-input.svg)](https://vaadin.com/directory/component/Collabornepaper-password-input)
 =========
